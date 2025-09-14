@@ -22,7 +22,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'https://java-2-hv5a.onrender.com', // <-- Update this
+  baseURL: 'https://java-3-skw8.onrender.com', // <-- Update this
 });
 
 // ✅ Add request interceptor once!
