@@ -5,7 +5,7 @@ import oip2 from '../assets/One.webp'
 import oip3 from '../assets/Two.webp'
 import vision from '../assets/Three.png'
 import '../HomePage.css';
-
+import API from './api';
 export default function HomePage() {
   const [products, setProducts] = useState([]);
 
@@ -16,7 +16,7 @@ export default function HomePage() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/user/products");
+      const res = await API.get("/user/products");
       setProducts(res.data);
     } catch (err) {
       console.error(err);
